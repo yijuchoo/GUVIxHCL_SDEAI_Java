@@ -16,6 +16,7 @@ public class ForLoop {
 
         // Post-increment Operator i++
         // Will increment the value of i only AFTER executing the code block {...}
+        System.out.println("Example 1");
         for (int i = 0; i < 10; i++) {
             /*
              * i = 0
@@ -32,6 +33,28 @@ public class ForLoop {
              *   Condition: 10 < 10; Console (Print): XXX Not Printing cos 10 is not less than 10
              */
             System.out.println(i);
-        }
+        } // Output: Prints 0 to 9 vertically
+
+
+        System.out.println("\nExample 2: Declaring n, i < n");
+        int n = 10;
+        for(int i = 0; i < n; i++) {
+            System.out.println(i);
+        } // Output: Prints 0 to 9 vertically
+
+
+        System.out.println("\nExample 3: Counting Down (Reverse)");
+        int j = 10;
+        // i-- -> Decrementing the value of i by 1
+        for(int i = j; i >= 0; i--) {
+            System.out.println(i);
+        } // Output: Prints 10 to 0 vertically
+
+
+        System.out.println("\nExample 4: Counting Up from 0, each time +10");
+        int m = 100;
+        for(int i = 0; i <= m; i = i + 10) {
+            System.out.println(i);
+        } // Output: Prints 0 to 100 vertically (each time +10)
     }
 }
