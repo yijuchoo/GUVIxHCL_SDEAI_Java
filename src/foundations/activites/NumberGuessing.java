@@ -39,7 +39,7 @@ public class NumberGuessing {
          * If I keep guessing, and it starts from any number from 1 to 100.
          */
         System.out.println("\nExample 2: Keep guessing until hit secret number");
-        int guess = 58;
+        int guess = 62;
         while (guess >= 1 && guess <= 100) {
             System.out.print("[My guess " + guess + "] -- ");
 
@@ -59,6 +59,31 @@ public class NumberGuessing {
             System.out.println("Outside range of 1 - 100. Try again.");
         }
 
+        // Example 3
+        System.out.println("\nExample 3: Random generated number to guess secret number");
+        // math.random -> gives a number equal to 0.00 or less than 1
+        // eg. (int) 0.1234 -> 0
+        while (true) {
+            int randomNumber = (int) (Math.random() * 100) + 1; // casting double to an integer
+            /* The (int) part casts the double into an integer by dropping the decimal part (truncating).
+             *  Examples:
+             * 50.9 → 50
+             * 0.0 → 0
+             * 99.99 → 99
+             * Now the range is 0–99 (inclusive)
+             * Adding 1 shifts the range from 0 to 99 → 1 to 100.
+             * So the final randomNumber is an integer between 1 and 100, inclusive.
+             */
+            if (randomNumber == secret) {
+                System.out.println("Secret found!");
+                break;
+            } else if (randomNumber > secret) {
+                System.out.println(randomNumber + " is higher than secret no.");
+            } else {
+                System.out.println(randomNumber + " is lower than secret no.");
+
+            }
+        }
 
     }
 }
