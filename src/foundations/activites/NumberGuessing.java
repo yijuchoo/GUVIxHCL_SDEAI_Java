@@ -10,8 +10,8 @@ public class NumberGuessing {
          *     or "Lower than ..." by comparing the guess with the secret
          */
 
-        int secret = 66;
-        int myGuess = 50;
+        int secret = 23;
+        int myGuess = 30;
 /*
         while secret is between 1 and 100
         if myGuess is equal to secret, print "You guessed right! The secret number is " + secret
@@ -39,7 +39,7 @@ public class NumberGuessing {
          * If I keep guessing, and it starts from any number from 1 to 100.
          */
         System.out.println("\nExample 2: Keep guessing until hit secret number");
-        int guess = 62;
+        int guess = 30;
         while (guess >= 1 && guess <= 100) {
             System.out.print("[My guess " + guess + "] -- ");
 
@@ -59,7 +59,7 @@ public class NumberGuessing {
             System.out.println("Outside range of 1 - 100. Try again.");
         }
 
-        // Example 3
+        // Example 3: Live Class
         System.out.println("\nExample 3: Random generated number to guess secret number");
         // math.random -> gives a number equal to 0.00 or less than 1
         // eg. (int) 0.1234 -> 0
@@ -82,6 +82,19 @@ public class NumberGuessing {
             } else {
                 System.out.println(randomNumber + " is lower than secret no.");
 
+            }
+        }
+
+        // Example 4: Live Class
+        System.out.println("\nExample 4: Using i = 1 to guess secret number");
+        for (int i = 1; i <= 100; i++) {
+            if (i == secret) {
+                System.out.println("Secret found!");
+                break;
+            } else if (i > secret) {
+                System.out.println(i + " is Higher than secret no.");
+            } else {
+                System.out.println(i + " is Lower than secret no.");
             }
         }
 
