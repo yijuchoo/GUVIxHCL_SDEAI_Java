@@ -14,20 +14,20 @@ public class MinMaxArray {
      */
 
     public static int max(int[] arr) {
-
         if (arr == null || arr.length == 0) {
-            return -1;
+            return -1; // Should use Integer.MIN_VALUE
         }
         int maxValue = arr[0];
         for (int i = 1; i < arr.length; i++) {
             if (maxValue < arr[i]) {
                 maxValue = arr[i];
-                System.out.println(maxValue);
             }
         }
         return maxValue;
     }
 
+    // Parameters: Array of integers
+    // Return type: Integer
     public static int min(int[] arr) {
         int minValue = 0;
         for (int i = 0; i < arr.length - 1; i++) {
@@ -61,11 +61,14 @@ public class MinMaxArray {
         array[4] = 30;
 
         int max = max(array);
-        System.out.println("Maximum value is " + max);
-        max(null);
+        System.out.println("Maximum value is " + max); // Output: 50
+//        max(null);
+        System.out.println(max(null)); // Output: -1
 
-        System.out.println(Integer.MIN_VALUE);
-//        int min = min(array);
-//        System.out.println("Minimum value is " + min);
+        System.out.println(Integer.MIN_VALUE); // Output: -2147483648
+        int min = min(array);
+        System.out.println("Minimum value is " + minValue(array)); // Output: 10
+        System.out.println("Minimum value is " + min); // Output: 10
+        System.out.println(Integer.MAX_VALUE); // Output: 2147483647
     }
 }
