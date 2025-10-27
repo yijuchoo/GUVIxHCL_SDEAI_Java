@@ -1,0 +1,16 @@
+Activity 1: Train tickets
+
+- Goal
+    - Add SleeperTicket that extends the existing TrainTicket
+    - Reuse AcTicket from the previous slide
+- Given
+    - TrainTicket is abstract with pnr, constructor, int fare(int km), and coachType() default
+    - AcTicket implements the AC fare and overrides coachType()
+- Design and rules
+    - SleeperTicket.fare(km): if km <= 0 return 0, else km * 2
+    - Override coachType() to return "Sleeper"
+    - Do not change TrainTicket or AcTicket
+- Acceptance checks
+    - new SleeperTicket().fare(10) -> 20
+    - new AcTicket().fare(10) -> 30
+    - TrainTicket[] arr = { new SleeperTicket(), new AcTicket() }

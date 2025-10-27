@@ -1,0 +1,14 @@
+Polymorphism: one call, many behaviors
+
+- Polymorphism means one parent type can refer to many child types
+        - The call is the same but the behavior depends on the actual object
+        - Eg: Notification -> WhatsAppNotification and SMSNotification
+- Objects provide their own method bodies
+        - Eg: Notification::sendNotification
+            -   WhatsAppNotification::sendNotification
+            -   SMSNotification::sendNotification
+- Runtime dispatch chooses which overridden method runs
+        - Eg: notification.sendNotification(); OR whatsAppNotification.sendNotification();
+- Storage and loops
+        - Use an array of the parent type to hold different child objects
+- Boundaries: Methods, not fields, are polymorphic

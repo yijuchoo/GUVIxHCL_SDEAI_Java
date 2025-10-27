@@ -1,4 +1,4 @@
-package foundations.ifelsestatements;
+package foundations.conditionalstmts;
 
 public class IfElseStatements {
     public static void main(String[] args) {
