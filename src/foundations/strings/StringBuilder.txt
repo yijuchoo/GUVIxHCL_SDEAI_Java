@@ -1,0 +1,54 @@
+StringBuilder vs StringBuffer
+
+What are they?
+    - StringBuilder and StringBuffer are mutable helper to build text piece by piece
+    - Both allow to change the value of a String that is declared and use.
+    - They reduce the temporary String objects created by repeated + in loops
+
+Which To Use?
+    - Prefer StringBuilder for single-threaded, everyday code.
+        - Not ideal for larger-scaled applications -> Require Multi-threading
+
+    - StringBuffer -> Useful for Multi-threading
+        - Older, thread-safe variant.
+        - When multiple threads access the same string, it will only allow ONE THREAD
+          to access a String at a time.
+
+How To Use?
+    - Append parts as you go, then call toString() once at the end to get a String
+
+-------------------------------------------------------------------------------------------------------------
+    Both StringBuilder and StringBuffer in Java are mutable classes used to build or
+    modify strings efficiently — but they differ mainly in thread safety.
+
+    String
+    - Immutable — once created, it cannot be changed.
+    - Every time you modify a String (e.g. concatenation), Java actually creates a new String object in memory.
+        String s = "Hello";
+        s = s + " World"; // creates a new String object
+    - ❌ Inefficient when doing lots of concatenation or text modification (e.g. inside loops).
+
+    StringBuilder
+    - Mutable — content can be changed without creating new objects.
+    - Not thread-safe (❌ not synchronized).
+    - Faster** than `StringBuffer` for single-threaded operations.
+    - ✅ Use when:
+        - Your code runs in a **single thread** (most applications).
+        - You want **better performance** when concatenating strings repeatedly (e.g. loops, file reading, etc).
+
+    StringBuffer
+    - Also mutable, but thread-safe.
+    - All methods are synchronized, so only one thread can modify the buffer at a time.
+    - ✅ Use when:
+        - Multiple threads might modify the same string object concurrently.
+    - ⚠️ Slightly slower than StringBuilder due to synchronization overhead.
+
+
+Summary Table
+-------------------------------------------------------------------------------------------------------
+Feature	        String	                    StringBuilder	                StringBuffer
+-------------------------------------------------------------------------------------------------------
+Mutable	        ❌ No	                    ✅ Yes	                        ✅ Yes
+Thread-safe	    ✅ Yes (immutable)	        ❌ No	                        ✅ Yes
+Performance	    Slow for concatenation	    Fast	                        Slower than StringBuilder
+Use case	    Simple, constant strings	Single-threaded performance	    Multi-threaded safety
