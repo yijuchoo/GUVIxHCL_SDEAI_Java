@@ -1,0 +1,6 @@
+What is a Class?
+    - Blueprint listing fields for data and methods for actions
+
+
+What is an Object?
+    -
