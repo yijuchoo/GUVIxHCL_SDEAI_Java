@@ -40,7 +40,8 @@ public class StringBuilderBasics {
         sb.insert(8, "really ");
         System.out.println(sb); // Java is really fun
         System.out.println(sb.indexOf("s")); // 6
-
+        sb.append("!");
+        System.out.println(sb);
         System.out.println(sb.reverse()); // nuf yllaer si avaJ
 
         System.out.println("\n=== Checking num 1 == 5 ===");
@@ -57,6 +58,9 @@ public class StringBuilderBasics {
         // Even if "temp" exists
         // eg. reference is 123456
         String str = new String("temp");
+
+        str = str + " test";
+        System.out.println(str);
         // String literal
         // Initialization
         // If "temp" string already exists, resue
