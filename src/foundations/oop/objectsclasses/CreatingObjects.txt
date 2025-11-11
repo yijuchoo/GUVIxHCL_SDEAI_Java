@@ -1,0 +1,19 @@
+Creating Objects & Using Them
+========================================
+
+Object Creation
+    - Use new with a constructor to build an instance
+
+Independence rule
+    - Each object tracks its own balance and ownerName
+
+How to Call
+    - Use dot operator to call actions on a specific object
+
+Order
+    1. Declare variable
+    2. Create object
+    3. Call Methods
+
+Edge Checks
+    - Exact fare drops balance to 0.
