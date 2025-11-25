@@ -6,6 +6,12 @@ public class UPIWalletMain {
         UPIWallet wallet = new UPIWallet();
 
         boolean isPinUpdated = wallet.changePin("1234", "1235");
-        System.out.println(isPinUpdated);
+        System.out.println("Is pin updated? " + isPinUpdated);
+
+        // create CashbackWallet object
+        // 1% cashback wallet
+        CashbackWallet cw = new CashbackWallet(0.01);
+        cw.addMoney(100);
+        System.out.println("Balance after ₹100: " + cw.getBalance()); // 101
     }
 }
