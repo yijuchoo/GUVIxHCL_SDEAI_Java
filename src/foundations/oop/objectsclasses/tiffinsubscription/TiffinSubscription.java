@@ -28,4 +28,21 @@ public class TiffinSubscription {
         planName = cleaned;
         return true;
     }
+
+    public boolean useMeal() {
+        if (remainingMeals <= 0) return false;
+        remainingMeals--;
+        return true;
+    }
+
+    public void showRemainingMeals() {
+        System.out.println("Remaining meals for " + planName + ": " + remainingMeals);
+    }
+
+    // Allow children to add meals safely
+    protected void addMeals(int count) {
+        if (count > 0) {
+            this.remainingMeals += count;
+        }
+    }
 }
