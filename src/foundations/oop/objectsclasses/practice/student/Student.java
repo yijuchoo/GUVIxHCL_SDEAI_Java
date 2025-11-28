@@ -1,4 +1,4 @@
-package foundations.oop.objectsclasses.practice;
+package foundations.oop.objectsclasses.practice.student;
 
 public class Student {
     private String name;
@@ -16,6 +16,14 @@ public class Student {
         }
         this.name = cleaned;
         return true;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
     }
 
 }
