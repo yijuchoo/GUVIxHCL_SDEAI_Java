@@ -1,4 +1,4 @@
-package foundations.abstractclasses.trainticket;
+package foundations.oop.abstractclasses.trainticket;
 
 public class AcTicket extends TrainTicket {
     // Child

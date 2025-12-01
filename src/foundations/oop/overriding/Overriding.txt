@@ -1,0 +1,15 @@
+Overriding rules that matter
+=================================================
+
+    Signature match
+        - Same name and parameters; @Override verifies the match
+
+    Access
+        - Child access is the same or more open than parent
+
+    Return
+        - May be a subtype of the parent’s return (covariant return)
+
+    Final
+        - A final method cannot be overridden
+        - Applies to variables - a variable declared with final cannot have it’s value changed

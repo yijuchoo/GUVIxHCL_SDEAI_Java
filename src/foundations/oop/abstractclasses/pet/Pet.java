@@ -1,4 +1,4 @@
-package foundations.abstractclasses.pet;
+package foundations.oop.abstractclasses.pet;
 
 public abstract class Pet {
     private String name;

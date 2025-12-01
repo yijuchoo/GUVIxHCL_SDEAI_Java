@@ -1,4 +1,4 @@
-package foundations.abstractclasses.pet;
+package foundations.oop.abstractclasses.pet;
 
 public class Dog extends Pet {
     public Dog(String name) {

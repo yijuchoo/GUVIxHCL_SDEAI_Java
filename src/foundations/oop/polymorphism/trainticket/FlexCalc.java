@@ -1,4 +1,4 @@
-package foundations.abstractclasses.trainticket;
+package foundations.oop.polymorphism.trainticket;
 
 public class FlexCalc {
     // Overloading in same class

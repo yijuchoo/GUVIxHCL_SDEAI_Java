@@ -1,4 +1,4 @@
-package foundations.polymorphism.trainticket;
+package foundations.oop.polymorphism.trainticket;
 
 public class AcTicket extends TrainTicket {
     // Child
