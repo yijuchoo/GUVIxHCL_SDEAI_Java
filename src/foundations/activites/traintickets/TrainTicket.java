@@ -12,8 +12,16 @@ public abstract class TrainTicket {
     public abstract int fare(int km);
 
     public String coachType() {
-        return "Sleeper";
+        return "Seater";
     }
 
+    @Override
+    public String toString() {
+        return "PNR: " + pnr + ", Coach: " + coachType();
+    }
+
+    public String getPnr() {
+        return pnr;
+    }
 
 }

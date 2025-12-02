@@ -1,6 +1,12 @@
 package foundations.activites.traintickets;
 
 public class AcTicket extends TrainTicket {
+    // No-arg Constructor
+    public AcTicket(){
+        super("NA");
+    }
+
+    // Constructor
     public AcTicket(String p) {
         super(p);
     }
