@@ -3,16 +3,19 @@ package foundations.activites.traintickets;
 public abstract class TrainTicket {
 
     private final String pnr; // final -> cannot be changed. private -> not exposed to anyone.
+    private String coachType;
 
-    public TrainTicket(String p) {
+    public TrainTicket(String p, String coachType) {
         this.pnr = p;
+        this.coachType = coachType;
     }
 
     // Must implement
     public abstract int fare(int km);
 
+    // Use the field rather than hard-coding in subclasses
     public String coachType() {
-        return "Seater";
+        return coachType;
     }
 
     @Override

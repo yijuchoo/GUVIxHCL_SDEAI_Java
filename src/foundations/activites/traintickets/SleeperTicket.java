@@ -1,13 +1,15 @@
 package foundations.activites.traintickets;
 
 public class SleeperTicket extends TrainTicket {
-    // No-arg Constructor
-    public SleeperTicket(){
-        super("NA");
-    }
-    // Constructor
+
+    // Default constructor: uses standard "Sleeper"
     public SleeperTicket(String p) {
-        super(p);
+        super(p, "Sleeper");
+    }
+
+    // Flexible constructor: lets caller override coachType
+    public SleeperTicket(String p, String coachType) {
+        super(p, coachType);
     }
 
     @Override
@@ -15,8 +17,4 @@ public class SleeperTicket extends TrainTicket {
         return (km <= 0) ? 0 : km * 2;
     }
 
-    @Override
-    public String coachType() {
-        return "Sleeper";
-    }
 }

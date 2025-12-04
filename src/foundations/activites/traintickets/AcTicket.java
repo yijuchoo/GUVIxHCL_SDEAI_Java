@@ -1,14 +1,13 @@
 package foundations.activites.traintickets;
 
 public class AcTicket extends TrainTicket {
-    // No-arg Constructor
-    public AcTicket(){
-        super("NA");
-    }
-
-    // Constructor
+    // Default Constructor
     public AcTicket(String p) {
-        super(p);
+        super(p, "AC");
+    }
+    // Flexible Constructor
+    public AcTicket(String p, String coachType) {
+        super(p, coachType);
     }
 
     @Override
@@ -16,8 +15,8 @@ public class AcTicket extends TrainTicket {
         return (km <= 0) ? 0 : km * 3;
     }
 
-    @Override
-    public String coachType() {
-        return "AC";
-    }
+//    @Override
+//    public String coachType() {
+//        return "AC";
+//    }
 }
