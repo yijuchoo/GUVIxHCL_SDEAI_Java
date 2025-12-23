@@ -1,6 +1,6 @@
-package foundations.oop.interfaces;
+package foundations.oop.interfaces.cardpayment;
 
-public class DebitCard implements Payable{
+public class DebitCard implements Payable {
 
     @Override
     public int pay(int amount) {

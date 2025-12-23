@@ -1,4 +1,4 @@
-package foundations.oop.interfaces;
+package foundations.oop.interfaces.cardpayment;
 
 public class CreditCard implements Payable {
     @Override

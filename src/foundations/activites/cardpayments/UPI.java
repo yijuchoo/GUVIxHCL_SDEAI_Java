@@ -1,10 +1,10 @@
 package foundations.activites.cardpayments;
 
-public class DebitCard implements Payable {
+public class UPI implements Payable {
+
     private int balanceAmount;
 
-    // Constructor
-    public DebitCard(int balanceAmount) {
+    public UPI(int balanceAmount) {
         this.balanceAmount = balanceAmount;
     }
 
@@ -15,7 +15,7 @@ public class DebitCard implements Payable {
             return 0;
         }
         balanceAmount -= amount;
-        System.out.println("Creditcard: pay " + amount + " = " + Payable.currency() + " " + balanceAmount);
+        System.out.println("UPI: pay " + amount + " = " + Payable.currency() + " " + balanceAmount);
         return 1;
     }
 

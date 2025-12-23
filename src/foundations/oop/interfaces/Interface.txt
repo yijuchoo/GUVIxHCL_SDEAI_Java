@@ -43,3 +43,19 @@ Multiple interfaces: combining capabilities
 
     Use Cases & Benefits
         - Payments that can also refund; orthogonal features stay decoupled
+
+----------------------------------------------------------
+
+Resolving default-method conflicts
+=====================================
+- When conflict happens
+        - Two interfaces provide the same default method name and signature
+
+- Resolution rule
+        - Override in the class and select explicitly:
+          InterfaceName.super.method()
+
+- Benefit
+        - You stay explicit about which behavior you keep or combine
+
+

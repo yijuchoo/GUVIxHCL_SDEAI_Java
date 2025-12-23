@@ -1,4 +1,4 @@
-package foundations.oop.interfaces;
+package foundations.oop.interfaces.cardpayment;
 
 // Contract
 public interface Payable {
