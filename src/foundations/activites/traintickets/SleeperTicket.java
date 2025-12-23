@@ -12,6 +12,7 @@ public class SleeperTicket extends TrainTicket {
         super(p, coachType);
     }
 
+
     @Override
     public int fare(int km) {
         return (km <= 0) ? 0 : km * 2;

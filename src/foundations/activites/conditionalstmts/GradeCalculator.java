@@ -1,17 +1,19 @@
-package foundations.activites;
+package foundations.activites.conditionalstmts;
 
 public class GradeCalculator {
     public static void main(String[] args) {
 
         /*
+         * Lecture 2 & 3: Control Flow, Loops & Functions
+         *
          * Activity A: Grade Calculator
          * Goal: Convert a numeric score (0 - 100) to "A" | "B" | "C" | "D" | "F"
-         * using clear boundaries, then refactor the mapping to a SWITCH expression.
+         *        using clear boundaries, then refactor the mapping to a SWITCH expression.
          * Boundaries: A: 90 - 100, B: 80 - 89, C: 70 - 79, D: 60 - 69, F: 0 - 59
-         * - Treat anything outside 0 - 100 as invalid
+         *      - Treat anything outside 0 - 100 as invalid
          * Consider:
-         * - Edge Cases: Each of these - 60, 70, 80, 90 - must land in the correct bucket
-         * - invalid inputs show "Invalid"
+         *      - Edge Cases: Each of these - 60, 70, 80, 90 - must land in the correct bucket
+         *      - invalid inputs show "Invalid"
          */
         System.out.println("Switch Expression Example");
         int score = 72;

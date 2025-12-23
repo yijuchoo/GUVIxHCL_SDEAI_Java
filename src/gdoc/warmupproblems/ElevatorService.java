@@ -1,9 +1,10 @@
-package foundations.activites;
+package gdoc.warmupproblems;
 
 public class ElevatorService {
 
     public static void main(String[] args) {
         /*
+        *  Warm Up Problems (Google Doc)
         *  Elevator: ServiceMode
         *  A lift serves floors 1 to 10.
         *  From floor 7 upwards, it stops only on even floors (8 and 10).

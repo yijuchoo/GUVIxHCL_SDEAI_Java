@@ -1,8 +1,12 @@
-package foundations.activites;
+package foundations.activites.conditionalstmts;
 
 public class NumberGuessing {
     public static void main(String[] args) {
         /*
+         * Lecture 2 & 3: Control Flow, Loops & Functions
+         *
+         * Activity B: Number Guessing
+         *
          * Goal:
          *   - The program stores a secret in 1 - 100 (hardcoded for now)
          *   - It repeatedly guesses the secret

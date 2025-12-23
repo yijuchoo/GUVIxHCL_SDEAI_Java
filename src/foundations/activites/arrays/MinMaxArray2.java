@@ -1,4 +1,4 @@
-package foundations.activites;
+package foundations.activites.arrays;
 
 public class MinMaxArray2 {
     /*

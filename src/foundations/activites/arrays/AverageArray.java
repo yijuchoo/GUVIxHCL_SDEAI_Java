@@ -1,17 +1,19 @@
-package foundations.activites;
+package foundations.activites.arrays;
 
 public class AverageArray {
     /*
-    Activity Average
+    Lecture 4: Arrays ,String API & Wrapper Classes
+
+    Activity: Average
 
     What you will build
-        A method that returns the average of all elements in an int[]
+        - A method that returns the average of all elements in an int[]
     Hints for accurate results
-        Add up everything first, then divide once at the end
-        Use a wider running total to reduce overflow risk
+        - Add up everything first, then divide once at the end
+        - Use a wider running total to reduce overflow risk
     Edge rules we will use today
-        If the array is empty, return 0.0 as “no data yet”
-        Make the return type double to keep fractional parts
+        - If the array is empty, return 0.0 as “no data yet”
+        - Make the return type double to keep fractional parts
     */
     public static int sum(int[] arr) { // Defined a parameter called arr
         if (arr == null || arr.length == 0) {

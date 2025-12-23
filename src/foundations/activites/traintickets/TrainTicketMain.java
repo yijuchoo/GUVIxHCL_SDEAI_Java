@@ -1,5 +1,11 @@
 package foundations.activites.traintickets;
 
+import foundations.activites.traintickets.cardpayments.CreditCard;
+import foundations.activites.traintickets.cardpayments.Payable;
+import foundations.activites.traintickets.cardpayments.UPI;
+import foundations.activites.traintickets.notification.Notifier;
+import foundations.activites.traintickets.notification.SmsNotifier;
+
 import java.util.Arrays;
 
 public class TrainTicketMain {
@@ -56,5 +62,32 @@ public class TrainTicketMain {
         PNR: PNR3, Coach: AC-New, Fare: 30
         PNR: PNR3, Coach: , Fare: 20
         */
+        System.out.println("===================================");
+        TrainTicket[] ts = {new SleeperTicket("PNR5"), new AcTicket("PNR6")};
+        for(TrainTicket t : ts) {
+            System.out.println("fare -> " + t.fare(8));
+        }
+        System.out.println("===================================");
+        Payable[] ps = {new CreditCard(500), new UPI(400), null};
+        for(Payable p : ps) {
+            if(p == null) continue;
+            System.out.println("paid -> " + p.pay(300));
+        }
+
+        System.out.println("===================================");
+
+        Notifier[] ns = {new SmsNotifier()};
+        for (Notifier n : ns) {
+            n.send("Delivered");
+        }
+        // Output: SMS -> Delivered
     }
 }
+/*
+    Lecture 6 slide 25
+    Putting it together: arrays and loops across packages
+        - Let’s look at an example with one pattern and three domains
+        - TrainTicket[] (rail), Payable[] (payments), Notifier[] (notify)
+    Boundary
+        - Guard null entries
+*/

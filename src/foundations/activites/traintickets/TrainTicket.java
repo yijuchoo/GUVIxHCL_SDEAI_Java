@@ -10,6 +10,10 @@ public abstract class TrainTicket {
         this.coachType = coachType;
     }
 
+    public TrainTicket(String pnr) {
+        this.pnr = pnr;
+    }
+
     // Must implement
     public abstract int fare(int km);
 

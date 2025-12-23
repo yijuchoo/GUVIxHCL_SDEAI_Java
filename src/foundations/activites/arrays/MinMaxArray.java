@@ -1,16 +1,20 @@
-package foundations.activites;
+package foundations.activites.arrays;
 
 public class MinMaxArray {
     /*
-     * What you will build
-     *  - A method to return the largest value in an int[]
-     *  - A method to return the smallest value in an int[]
-     * Hints for a correct first pass
-     *  - Start from the first element and track
-     *  - Update the best when you see a better candidate
-     * Edge rules
-     *  - If array is empty or NULL, return a documented sentinel
-     *  - For min use Integer.MIN_VALUE; for max use Integer.MAX_VALUE
+     * Lecture 4: Arrays ,String API & Wrapper Classes
+     *
+     * Activity: Max and Min
+     *
+     *      What you will build
+     *          - A method to return the largest value in an int[]
+     *          - A method to return the smallest value in an int[]
+     *      Hints for a correct first pass
+     *          - Start from the first element and track
+     *          - Update the best when you see a better candidate
+     *      Edge rules
+     *          - If array is empty or NULL, return a documented sentinel
+     *          - For min use Integer.MIN_VALUE; for max use Integer.MAX_VALUE
      */
 
     public static int max(int[] arr) {

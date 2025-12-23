@@ -1,7 +1,11 @@
-package foundations.activites;
+package foundations.activites.conditionalstmts;
 
 public class PatternPrinting {
     /*
+     * Lecture 2 & 3: Control Flow, Loops & Functions
+     *
+     * Activity C: Pattern Printing
+     *
      * Goal:
      *   - Print a Left-aligned triangle of * using a variable rows set at the top (no user input yet)
      *   - The outer loop controls rows; the inner loop prints row number of stars
