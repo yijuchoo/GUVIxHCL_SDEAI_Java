@@ -3,6 +3,9 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 .kotlin
+.idea/
+*.iml
+*.iws
 
 ### Eclipse ###
 .apt_generated
@@ -26,5 +29,28 @@ bin/
 ### VS Code ###
 .vscode/
 
+# Maven
+target/
+
+# Gradle
+.build/
+build/
+.bin/
+
+# Gradle cache
+.gradle/
+
 ### Mac OS ###
 .DS_Store
+
+# -------- Logs & dumps --------
+*.log
+hs_err_pid*
+replay_pid*
+
+# -------- Environment / local config --------
+.env
+.env.*
+*.local.properties
+
+my-reference/

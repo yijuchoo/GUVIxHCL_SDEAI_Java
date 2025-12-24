@@ -1,14 +1,7 @@
-Activity: PersistToDo (Trim empty spaces and checks for duplicates)
-
-Prepare for lecture
+            Activity: PersistToDo (Trim empty spaces and checks for duplicates)
 
 
-Create slides
+    Prepare for lecture
+                    Create slides
 
-
-            Review slides
-
-Create slides
-    Create slides
-
-        Prepare for lecture
+                                Review slides

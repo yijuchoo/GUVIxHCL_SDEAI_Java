@@ -1,4 +1,4 @@
-package exercises.wrapperclasses;
+package githubexercises.wrapperclasses;
 
 public class GenericMain {
     // Generic method that works with any type

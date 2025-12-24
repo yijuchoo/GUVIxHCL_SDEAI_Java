@@ -1,4 +1,4 @@
-package exercises.wrapperclasses;
+package githubexercises.wrapperclasses;
 
 class Box<T> {
     T value;

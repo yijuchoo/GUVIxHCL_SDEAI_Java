@@ -1,8 +1,12 @@
-package foundations.activites.threadtwoworkers;
+package foundations.activites.fileioconcurrency;
 
 public class ThreadTwoWorkers {
     public static void main(String[] args) {
         /*
+        * Lecture 10: File I/O & Concurrency
+        *
+        * Activity: Start Two Workers
+        *
         * Create two workers that print their task names and then exit
         * Implement one as a Thread subclass and the other as a Runnable
         */
