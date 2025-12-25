@@ -1,0 +1,62 @@
+What are Strings?
+    - An object that represents a sequence of characters
+    - A reference type, NOT a primitive
+
+String & Immutability
+    - A String never changes after it is created
+    - Any apparent change creates a new String with the new content
+
+Why it matters?
+    - Repeatedly creating Strings in a loop can create several temporary Strings
+    - Passing a String to a method cannot modify the original text
+
+Practical Rules
+    - Use String for fixed or small pieces of text
+    - Prefer a builder when assembling text in loops or many steps
+
+Core String Methods
+    - Measuring and Indexing
+        - length() returns the number of characters
+            String s = "hello"
+            // index :  01234
+            System.out.println(s.length()); // Output: 5
+
+        - charAt(i) returns the character at index i where 0 <= i < length()
+            System.out.println(s.charAt(1)); // Output: e
+
+        - Taking slices
+            - substring(start, end) returns text from start up to but NOT INCLUDING end
+                System.out.println(s.substring(1,4)); // ell
+
+            - substring(start) returns from start to the end
+                System.out.println(s.substring(1)); // ello
+
+        - Searching
+            - indexOf(x) returns the first position of x or -1 if not found
+                System.out.println(s.indexOf("lo")); // 3
+                System.out.println(s.indexOf("LO")); // -1
+            - You can search for a single character or a substring
+
+Equality == vs equals
+    - == asks whether two references point to the same object
+    - equals asks whether two Strings have the same sequence of characters
+        String a = new String("Admin");
+        String b = "Admin";
+        System.out.println(a == b); // false
+        System.out.println(a.equals(b)); // true
+
+    Safe Rule
+    - Use equals for content checks
+    - Use equalsIgnoreCase only when case does not matter
+
+    Pitfalls to avoid
+    - name == "Admin" may appear to work sometimes, then fail later
+        System.out.println(name == "Admin"); // Not recommended to use
+        System.out.println("Admin".equals(name)); // Correct way to use
+
+    - If a variable might be null, write "Admin".equals(name) to avoid errors
+        String name = null;
+        System.out.println("Admin".equals(name)); // Correct way to write when variable/ name is NULL
+        System.out.println(name.equals("Jake")); // This will give NullPointerException error
+
+

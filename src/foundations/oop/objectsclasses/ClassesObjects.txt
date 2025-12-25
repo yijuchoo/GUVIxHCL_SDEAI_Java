@@ -1,0 +1,57 @@
+What is a Class?
+    - Blueprint listing fields for data and methods for actions
+
+
+What is an Object?
+    - Concrete thing built from a class with its own values
+
+Fields
+    - Named data the object carries, like balance or ownerName
+
+Methods
+    - Named actions the object can do, like recharge or deductFare
+
+Independence Rule
+    - Two objects of the same class hold different field values
+
+Order
+    1. Define the class
+    2. Create objects using the class
+
+Eg.
+    Class                               |    Object
+    ===================================================
+    Dog             Create instance     |    Tommy
+                    -------------->
+
+    Properties          Methods         |    Property Values         Methods
+    ---------------------------------------------------------------------------
+    Name                getName()       |    Name: Tommy             getName()
+    Color               getColor()      |    Color: Green            getColor()
+    Eye_Color           getEyeColor()   |    Eye_Color: Brown        getEyeColor()
+    Height              getHeight()     |    Height: 17 in           getHeight()
+    Length              comeHere()      |    Length: 35 in           comeHere()
+
+
+Anatomy of Class
+----------------------
+Class Name
+    - Descriptive, PascalCase, matches the filename
+
+Fields
+    - Data as nouns. Start simple, set safe defaults where possible
+
+Methods
+    - Verbs that read or change fields. One clear job per method
+
+Constructor
+    - Special method that sets up a new object at creation time
+
+Access Modifier
+    - Keyword that controls who can see a member
+        - public, private & protected
+
+Order
+    1. Fields
+    2. Constructors
+    3. Methods

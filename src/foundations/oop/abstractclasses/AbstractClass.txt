@@ -1,0 +1,10 @@
+Abstract classes: declare the contract
+
+    - Abstract class
+        - Cannot be created directly; may have fields, constructors, concrete and abstract methods
+
+    - Abstract method
+        - Declares what children must implement (no body here)
+
+    - Relevance in the train example
+        - Enforce that every ticket defines fare(km)
