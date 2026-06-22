@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Document</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+ colspan -> used to make a table cell span across multiple columns, one cell occupy 
+ colspan -> Merge column
+-->
+    <table>
+      <tr>
+        <th>Name</th>
+        <th colspan="2">Marks</th>
+      </tr>
+      <tr>
+        <td>Venkat</td>
+        <td>HTML</td>
+        <td>90</td>
+      </tr>
+      <tr>
+        <td>Venkat</td>
+        <td>HTML</td>
+        <td>90</td>
+      </tr>
+    </table>
+    <br /><br />
+    <!-- rowspan -> it will merge the rows -->
+
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Day</th>
+      </tr>
+      <tr>
+        <td rowspan="2">Ram</td>
+        <td>Monday - Present</td>
+      </tr>
+      <tr>
+        <td>Tuesday - Half day Present</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Venkat</td>
+        <td>Monday</td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+      </tr>
+    </table>
+  </body>
+</html>

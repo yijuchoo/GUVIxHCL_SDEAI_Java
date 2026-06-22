@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      p {
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>HTML</p>
+    <p>CSS</p>
+    <p>Javascript</p>
+
+    <button onclick="changeColor()">Change Color</button>
+
+    <script>
+      function changeColor() {
+        const paras = document.getElementsByTagName("p");
+        paras[0].style.color = "lightgreen";
+        paras[1].style.color = "orange";
+        paras[2].style.color = "pink";
+
+        for (let i = 0; i < paras.length; i++) {
+          paras[i].textContent = "Frontend";
+          paras[i].style.background = "black";
+        }
+      }
+    </script>
+  </body>
+</html>

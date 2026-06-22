@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Float and Clear</title>
+    <style>
+        .box1 {
+            width: 350px;
+            height: 350px;
+            background-color: skyblue;
+            float: left;
+            border: 2px solid orange;
+        }
+        .box2 {
+            height: 100px;
+            background-color: yellow;
+            clear: both;
+            /* clear: both ->< will clear the float */
+        }
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+    <div class="box2">
+      Lorem ipsum dolor sit.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!-- <script>
+    let users = {
+    name: "Vijay",
+    age: 25
+};
+
+localStorage.setItem("Vijay", JSON.stringify(users)); // Setting the key
+
+let data = localStorage.getItem("Vijay"); // Getting the value
+
+// Convret JSON to Object
+let something = JSON.parse(data);
+console.log(users.name);
+
+</script> -->
+
+<!-- 
+Go to inspect element, Applications > Local Storage > http://127.0.0.1:5500
+Check Console as well
+-->
+
+<script>
+    let school = {
+        students: [
+            {
+                name: "ram",
+                subjects: ["html", "css"]
+            },
+            {
+                name: "nishanth",
+                subjects: ["javascript", "nodejs"]
+            }
+        ]
+    };
+
+    for(let student of school.students) {
+        // student object
+        for(let key in student) {
+            console.log(key, ":", student[key])
+        }
+        // subject array
+        for(let subject of student.subjects) {
+            console.log(subject);
+        }
+    };
+</script>

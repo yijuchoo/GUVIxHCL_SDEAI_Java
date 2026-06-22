@@ -1,0 +1,10 @@
+.welcome {
+  background-color: orange;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.welcome1 {
+  background-color: green;
+  font-size: 32px;
+  font-family: 'Courier New', Courier, monospace;
+}

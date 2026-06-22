@@ -1,0 +1,8 @@
+// Scope is where the variable can be accessed in the code
+// Scrope controls the visibility and lifetime
+
+// Global scope, function scope, block scope, lexical scope, module scopw, local scope.
+
+// global scope: 
+variable declared outside of all the functions and blocks => global scope variable
+

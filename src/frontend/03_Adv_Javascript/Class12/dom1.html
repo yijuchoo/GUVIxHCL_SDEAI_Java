@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Example 1 -->
+    <h1 id="heading">This is heading tag</h1>
+
+    <!-- script has to be before the body closing tag so that it is accessed -->
+    <script>
+      const heading = document.getElementById("heading");
+      console.log(heading);
+      heading.textContent = "Welcome Yirou";
+    </script>
+
+    <!-- Example 2 -->
+     <h1 id="heading1">This is example 2</h1>
+     <input id="username" type="text" placeholder="Enter your name"><br><br>
+     <input id="password" type="password" placeholder="Enter your password"><br><br>
+     <button onclick="submit()">Submit</button>
+     <button onclick="togglePassword()">Show/hide</button>
+
+     <script>
+        function submit() {
+            const heading1 = document.getElementById("heading1");
+            heading1.textContent = "Welcome Jerome Ford";
+            heading1.style.backgroundColor = "orange";
+            heading1.style.padding = "20px";
+            heading1.style.color = "blue";
+
+            // Select the input
+            const input = document.getElementById("username");
+            const result = document.getElementById("result");
+            result.textContent = input.value;
+        }
+
+        // Show/ Hide Password Toggle
+        function togglePassword() {
+            const password = document.getElementById("password");
+
+            if(password.type === "password") {
+                password.type = "text";
+            } else {
+                password.type = "password";
+            }
+        }
+     </script>
+  </body>
+</html>

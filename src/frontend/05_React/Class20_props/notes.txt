@@ -1,0 +1,3 @@
+Props -> Passing data from the parent component to the child component
+- Means sending information from a parent component to a child component
+

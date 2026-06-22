@@ -1,0 +1,19 @@
+Components:
+
+Components are the building block of the application.
+Components are the resuable UI block.
+
+In React, everything is the component
+
+SPA: Single Page Application
+Only one HTML
+
+
+npm create vite
+vite-project
+React
+Typescript
+Install with npm and start now: NO
+
+cd vite-project 
+npm install

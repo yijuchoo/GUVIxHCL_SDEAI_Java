@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Document</title>
+    <!-- 
+        inline will have the highest precedence, then followed by internal and external
+
+        if we add !important, its having the highest visibility than any other
+    -->
+    <style>
+      h2 {
+        background-color: orange;
+      }
+    </style>
+    <link rel="stylesheet" href="./style1.css" />
+  </head>
+  <body>
+    <h1 style="background-color: orange; background-color: green">
+      Today is Sunday and Funday
+    </h1>
+
+    <br><br>
+    <h2 style="background-color: aquamarine;">Just checking internal</h2>
+  </body>
+</html>

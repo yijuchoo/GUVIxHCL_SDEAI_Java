@@ -1,0 +1,11 @@
+array => a special variable used to store 
+
+// let student1 = "ram";
+// let student2 = "venkat";
+// let student3 = "ravi";
+
+// we store all values in one array
+// let students = ["ram", "venkat", "ravi"];
+
+// An array is an ordered collection of values stored in a single variable
+// Arrays can store strings, numbers, boolean, objects, functions, even other arrays

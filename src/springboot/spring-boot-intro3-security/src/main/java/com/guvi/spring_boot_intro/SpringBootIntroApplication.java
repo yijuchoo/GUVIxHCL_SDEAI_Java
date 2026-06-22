@@ -13,11 +13,4 @@ public class SpringBootIntroApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootIntroApplication.class, args);
 	}
-
-//    @Bean
-//    CommandLineRunner insertStudent(StudentService studentService) {
-//        return (args -> {
-//            // created a student
-//        });
-//    }
 }

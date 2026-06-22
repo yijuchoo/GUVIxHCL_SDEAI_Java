@@ -1,0 +1,64 @@
+SPA -> Single Page Application
+it will load only ONE HTML page and it will load all the content dynamically without reloading the entire page
+
+VM Model -> Vue Model
+Real DOM -> the source code
+Virtual DOM -> checks against the real DOM for any changes/ updates
+
+React is a JS library for building the user interface especially SINGLE PAGE APPLICATIONS (SPA).
+
+Before React, developers used the Javascript to direcly manipulate the DOM.
+    - Performance Issues occur
+    - DOM manipulations becomes complex
+
+React provides the SPA, Virtual DOM, fast performance
+
+Angular is a JS framework
+
+
+Method 1 Installation of React (Not Recommended)
+==================================================
+npm i react
+npm i react-dom
+
+** Method 2 React Installation (Recommended) **
+=============================================
+npx create-react-app sample-app
+
+
+Start React Application
+================================
+cd sample-app
+npm start
+
+
+Additional Things on React
+====================================
+npm test
+    Starts the test runner.
+
+npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+npm run build
+To create a production build, use npm run build.
+
+
+Ctrl + C
+To quit the current React Terminal to activate typing on Terminal
+
+
+Return to previous directory
+cd ..
+
+npm install
+npm will go through all the packages (dependencies) to check and install what's missing.
+
+
+View sample-app in browser:
+============================================
+Local:            http://localhost:3000
+On Your Network:  http://192.168.1.10:3000
+
+

@@ -1,0 +1,20 @@
+Module contains code that can be shared and reused in other javascript files
+(variables, functions, objects etc)
+
+module helps us to organize code into separate files and improve the code usability, and 
+makes application easier to maintain.
+
+Export - means making variables, functions available for use in other files.
+
+Import - make use of those exports in another files
+
+
+Promise - in JS contains 3 states:
+1. Pending State / Intitial state -> operation still running
+2. Fulfilled (resolved) -> Operations is completed successfully
+3. Rejected -> Operation failed
+
+Example:
+Order placed -> Pending
+Food delivered -> Fulfilled
+Restaurant cancels Order

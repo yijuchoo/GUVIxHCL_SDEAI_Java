@@ -1,0 +1,25 @@
+React
+============================
+When I run the react app in the browser, first file which will be loading is index.html
+
+index.html -> id => index.js
+
+
+Note
+=====================
+In index.js
+
+const root = ReactDOM.createRoot(document.getElementById('venkat'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+You can only have 1 component inside root.render(). We cannot have:
+root.render(
+  <React.StrictMode>
+    <App />
+    <App2 /> -> Not allowed
+  </React.StrictMode>
+);

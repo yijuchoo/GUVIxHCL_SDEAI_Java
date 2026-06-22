@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Tailwind CSS - Padding</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="border p-3 m-2">Today is Sunday</div>
+    <div class="border-2 p-3 m-2">Today is Sunday</div>
+    <div class="border-4 p-3 m-2">Today is Sunday</div>
+    <div class="border-8 p-3 m-2">Today is Sunday</div>
+    <div class="border-r-4 border-red-600 p-3 m-2">Today is Sunday</div>
+    <!-- border right -->
+    <div class="border-l-4 border-green-600 p-3 m-2">Today is Sunday</div>
+    <!-- border left -->
+    <div class="border-b-4 border-yellow-500 p-3 m-2">Today is Sunday</div>
+    <!-- border bottom -->
+    <br />
+    <hr />
+    <br />
+
+    <!-- border x and y -> horizontal(left + right) -->
+    <div class="border-x-4 border-green-500 p-3 m-2">Left + Right</div>
+    <br />
+    <div class="border-y-4 border-yellow-500 border-dashed p-3 m-2">
+      Top + Bottom
+    </div>
+    <br />
+    <div class="border-y-4 border-purple-500 border-double p-3 m-2">
+      Top + Bottom
+    </div>
+    <br />
+    <hr />
+    <br />
+
+    <div class="border border-orange-600 rounded-sm p-3 m-2">Something</div>
+    <div class="border border-orange-600 rounded p-3 m-2">Something</div>
+    <div class="border border-orange-600 rounded-md p-3 m-2">Something</div>
+    <div class="border border-orange-600 rounded-lg p-3 m-2">Something</div>
+    <div class="border border-orange-600 rounded-xl p-3 m-2">Something</div>
+    <div class="border border-orange-600 rounded-2xl p-3 m-2">Something</div>
+    <div class="border border-orange-600 rounded-full p-3 m-2">Something</div>
+    <br />
+    <br />
+    <div class="border rounded-t-lg border-purple-600 p-3 m-2">Something</div>
+    <div class="border rounded-l-lg border-purple-600 p-3 m-2">Something</div>
+    <div
+      class="border rounded-r-lg outline-2 outline border-orange-400 p-3 m-2"
+    >
+      Something
+    </div>
+    <!-- outline-2 outline -> Applying a 2px outline outside of the border -->
+    <div
+      class="border-2 rounded-r-lg outline-4 outline outline-blue-500 border-orange-400 p-3 m-2"
+    >
+      Something
+    </div>
+    <!-- outline outline-blue-500 -> Applying color to the outline -->
+  </body>
+</html>

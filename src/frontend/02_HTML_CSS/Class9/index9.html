@@ -1,0 +1,48 @@
+<!-- 
+    transform, transitions
+    transform -: used to change the sha, position, size, angle of the element w/o effecting the 
+    translate() -> moves element
+    translateX() -> moves horizontally
+    translateY() -> moves vertically
+    translateZ() -> moves in Z-axis
+    rotate() -> rotate element
+    rotateX(), y, z
+    scale() -> increase, decrease size
+    skew() -> skews element
+-->
+<!doctype html>
+<html>
+  <head>
+    <title>Transform & Transition</title>
+    <style>
+      .notification {
+        width: 250px;
+        background-color: crimson;
+        color: white;
+        font-size: 22px;
+        padding: 20px;
+        transform: translate(100px, 50px);
+        /* 100px x-axis, 50px y-axis */
+        transform: rotate(45deg);
+        transform: scale(1.1);
+        transform: skew(-20deg);
+      }
+
+      button {
+        padding: 20px 40px;
+        border: none;
+        background-color: teal;
+        color: white;
+      }
+
+      button:hover {
+        transform: scale(1.2) rotate(5deg) translate(-10px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="notification">50% OFF SALE</div>
+    <hr>
+    <button>Buy Now</button>
+  </body>
+</html>

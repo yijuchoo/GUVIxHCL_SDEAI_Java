@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Document</title>
+    <style>
+      /* *(star) is a Universal Selector, it will be applying to entire application */
+      * {
+        font-size: 40px;
+        color: purple;
+      }
+
+      /* Group Selector */
+      p,
+      h1,
+      div {
+        background-color: orange;
+        color: green;
+      }
+
+      /* Separate */
+      /* p {
+            background-color: orange;
+            color: green;
+        }
+
+        h1 {
+            background-color: orange;
+            color: green;
+        }
+
+        div {
+            background-color: orange;
+            color: green;
+        } */
+
+      #star {
+        background-color: black;
+        color: pink;
+      }
+      .something {
+        background-color: olivedrab;
+        color: goldenrod;
+      }
+
+      .asideclass {
+        border-radius: 50%;
+        margin: 10px;
+        background-color: blue;
+      }
+      #aside1 {
+        font-size: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>This is a paragraph</p>
+    <h1>This is heading1</h1>
+    <div>This is division</div>
+    <h2>This is heading2</h2>
+
+    <!-- 
+        id # -> will be unique to the page or app
+                cannot use more than 1 time in the page.
+
+        class -> we can apply to muliple elements.
+    -->
+    <h2 id="star">This is the star</h2>
+
+    <div class="something">This is division 2</div>
+
+    <section class="something">This is some section</section>
+
+    <aside id="aside1" class="something asideclass">This is aside</aside>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+In JS, events are actions that happen in the browser and can be handled using the event listener
+
+click -> user clicks an element
+doubleClick -> user double clicks an element
+mouseDown -> mouse button is pressed
+mouseUp -> when the mouse buttons is released
+mouseMove -> when the mouse moves over an element
+mouseOver
+mouseOut

@@ -1,0 +1,27 @@
+html5, css/ css3, RWD, tailwind css, javascript, advanced javascript, react, advanced react, github
+tools npm node, vs code
+
+Responsive Web Design
+===============================
+Responsive Design means creating websites that automatically adjust and look good on:
+mobile phones, 
+tablets, 
+laptops, 
+desktop screens, 
+tvs
+
+====================================
+Device              Width
+====================================
+mobile small        0px to 320px
+mobile medium       321px to 480px
+mobile large        481px to 767px
+tablet              768px to 1024px
+laptops             1025px to 1200px
+desktop             1201px to 1399px
+large desktop       1400px & above
+
+
+Syntax
+==========================
+@media(min-width: 768px) and (max-width: 1024px) -> apply the styles between 768px to 1024px

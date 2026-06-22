@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        input {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <input id="username" type="text" placeholder="Enter the username"><br><br>
+    <input id="password" type="password" placeholder="Enter the password"><br><br>
+    <button onclick="login()">Login</button>
+
+    <h2 id="message"></h2>
+
+
+
+    <script>
+        function login() {
+            const username = document.getElementById("username");
+            const password = document.getElementById("password");
+            const message = document.getElementById("message");
+
+            if(username.value === "admin" && password.value === "12345") {
+                message.textContent = "Login Successful";
+                message.style.color = "green";
+            } else {
+                message.textContent = "Invalid Credentials";
+                message.style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html>

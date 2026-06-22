@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Forms1</title>
+  </head>
+  <body>
+    <form>
+      Enter your age: <input type="number" /><br><br>
+      <input type="time" /><br><br>
+      <input type="month" /><br><br>
+      Select the week: <input type="week" /><br><br>
+      Select date time: <input type="datetime-local" /><br><br>
+      Choose color: <input type="color" /><br><br>
+      <input type="range" min="0" max="100" /><br><br>
+
+      <select>
+        <option>Idly</option>
+        <option>Dosa</option>
+        <option>Vada</option>
+      </select>
+      <br><br>
+
+      <!-- datalist -->
+       <label>Choose your city:</label>
+       <input list="cities" name="cities">
+       <datalist id="cities">
+        <option>Vizag</option>
+        <option>Chirala</option>
+        <option>Bangalore</option>
+        <option>Chennai</option>
+        <option>Hyderabad</option>
+       </datalist>
+
+       <br><br>
+       <progress value="70" max="100"></progress>
+       <br><br>
+       <meter value="0.2">60%</meter><br><br>
+
+       <input type="text" value="98712456" disabled><br><br>
+       <input type="text" value="98712456" readonly><br><br>
+
+       <input type="text" maxlength="10" minlength="4" required><br><br>
+       <button>Submit</button>
+
+    </form>
+  </body>
+</html>

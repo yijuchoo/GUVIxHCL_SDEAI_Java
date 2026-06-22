@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="card">Laptop</div>
+    <div class="card">Mobile</div>
+    <div class="card">AC</div>
+    <br />
+    <button onclick="highlightCards()">Highlight Cards</button>
+
+    <script>
+      function highlightCards() {
+        // Single selection only
+        // const cards = document.querySelector(".card");
+        // cards.style.backgroundColor = "blue";
+
+        // Select All
+        const cards = document.querySelectorAll(".card");
+
+        for (let i = 0; i < cards.length; i++) {
+          cards[i].style.backgroundColor = "blue";
+          cards[i].style.color = "white";
+          cards[i].style.margin = "20px";
+        }
+      }
+    </script>
+  </body>
+</html>

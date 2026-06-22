@@ -1,0 +1,6 @@
+npm init -y
+npm install typescript
+npx tsc -v 
+Version 6.0.3
+npm install -D tsx
+npx tsx function1.ts

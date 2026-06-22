@@ -1,0 +1,19 @@
+npm create vite
+
+Project name:
+vite-project
+
+Framework:
+React
+
+Variant:
+Typescript
+
+Install with npm and start now?
+No
+
+cd vite-project
+npm install
+npm run dev
+
+Run http://localhost:5173/

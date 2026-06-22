@@ -1,0 +1,40 @@
+
+npm create vite
+
+Project Name:
+vite-project
+
+Choose Framework:
+React
+
+Choose Variant:
+Javascript
+
+If doing for Typescript, Variant choose:
+Typescript
+
+Start now? No
+
+cd vite-project
+
+npm install
+intall node modules
+
+
+npm run dev
+run the React app
+
+
+Deploy in Netlify
+================================
+Add new project
+
+Import a Git Repo
+Select repo > install
+
+Set a Project Name
+remaining things no need to change
+
+Click Deploy
+
+https://guvi-react-vite.netlify.app/

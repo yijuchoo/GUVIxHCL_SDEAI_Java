@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Tailwind CSS - Padding</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- padding * margin - all sides -->
+    <div class="bg-blue-300 border p-6 m-2">Today is Sunday</div>
+    <br>
+    <!-- left and right -->
+    <div class="bg-blue-300 border px-6 mx-6">Today is Sunday</div>
+    <br>
+    <!-- top and bottom -->
+    <div class="bg-blue-300 border py-6 my-6">Today is Sunday</div>
+    <br>
+    <!-- top padding -->
+    <div class="bg-purple-500 border pt-10 mt-20">Today is Sunday</div>
+    <br>
+    <!-- bottom padding + margin all sides -->
+    <div class="bg-purple-500 border pb-10 m-10">Today is Sunday</div>
+
+    <br>
+    <hr>
+    <br>
+    <div class="w-24 bg-blue-300 border">About width</div>
+    <div class="h-24 bg-blue-300 border">About height</div>
+    <div class="h-24 w-64 bg-green-300 border">About height + width</div>
+  </body>
+</html>
+<!-- 
+  padding
+  p-2 -> padding all sides
+  px-2 -> left and right padding
+  py-2 -> top and bottom padding
+  pt-2 -> padding top
+  pb-2 -> padding bottom
+  pl-2 -> padding left
+
+  p-0
+  p-1
+  p-2
+  ...
+  p-6
+  p-8
+  p-10
+  p-12
+  p-16
+  p-20
+  ...
+  p-96
+
+-------------------------
+  margin
+  m-2 -> padding all sides
+  mx-2 -> left and right padding
+  my-2 -> top and bottom padding
+  mt-2 -> padding top
+  mb-2 -> padding bottom
+  ml-2 -> padding left
+
+  m-0
+  m-1
+  m-2
+  ...
+  m-6
+  m-8
+  m-10
+  m-12
+  m-16
+  m-20
+  ...
+  m-96
+
+-------------------------
+width and height
+
+width
+w-0 -> 0px
+w-0.5 -> 2px
+w-1 -> 4px
+w-1.5 -> 6px
+w-2 -> 8px
+w-2.5 -> 10px
+...
+w-96 -> 384px
+
+height
+h-0 -> 0px
+h-0.5 -> 2px
+h-1 -> 4px
+h-1.5 -> 6px
+h-2 -> 8px
+h-2.5 -> 10px
+...
+h-96 -> 384px
+
+-------------------------
+  fractions width classes
+  w-1/2 -> 50%
+  w-1/3 -> 33.3333%
+  w-2/3 -> 66.66%
+  w-1/4 -> 25%
+  w-2/4 -> 50%
+  w-3/4 -> 75%
+  
+  w-full -> 100%
+  w-auto -> auto width
+  
+  fractions height classes
+  h-1/2 -> 50%
+  h-1/3 -> 33.3333%
+  h-2/3 -> 66.66%
+  h-1/4 -> 25%
+  h-2/4 -> 50%
+  h-3/4 -> 75%
+  
+  h-full -> 100%
+  h-auto -> auto width
+
+-->

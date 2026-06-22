@@ -1,0 +1,59 @@
+What is NPM?
+node package manager for nodeJS
+
+nodeJS is the application which is used to develop both FE and BE application
+
+NPM => helps developers
+    - to install the packages
+    - manage the dependencies
+    - run the scripts
+    - update the packages
+    - remove the packages
+
+What is a package?
+package is the reusable code created by other developers
+
+package             purpose
+===================================================
+React               build UI
+typescript          to create the typescript code
+
+
+--------------------------------------------------------
+package.json
+
+package.json -> configuration file; which is the heart of any applications
+
+project name, version, dependencies
+
+
+node_modules
+===============================
+when the packages are installed, a folder will be created "node_modules" -> contains all the package folders.
+
+
+package-lock.json
+================================
+locks the exact package versions
+
+
+npm - node package manager
+npx - node package executer
+
+Create package.json file (only 1 package.json file)
+--------------------------------------------------------
+npm init
+
+OR
+
+npm init -y
+
+
+Install typescript and create node_modules
+---------------------------------------------------
+npm install typescript
+
+npm install tailwindcss
+
+npm install react
+

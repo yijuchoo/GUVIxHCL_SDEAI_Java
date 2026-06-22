@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+        
+    </style>
+  </head>
+  <body>
+    <!-- querySelector and querySelectorAll -->
+
+    <!-- id, className, tagName -->
+
+    <!-- 
+    document.querySelector("id") 
+    document.querySelector("class")
+    document.querySelector("tag") 
+
+
+    querySelector()
+    -------------------
+    returns only first matching element,
+    single element
+    used when one element needed
+    
+
+    querySelectorAll()
+    ---------------------
+    returns all the matching elements
+    nodelist
+    used when multiple elements needed
+
+
+    -->
+    <p class="text">HTML</p>
+    <p class="text">CSS</p>
+    <p class="text">Javascript</p>
+
+    <div>This is a division</div>
+    <h1 id="heading">This is heading</h1>
+
+    <script>
+      const para = document.querySelector(".text"); // class
+      const para1 = document.querySelector("div");  // tag
+      const heading = document.querySelector("#heading");
+      console.log(para);
+      console.log(div);
+      console.log(heading);
+    </script>
+
+
+    <input type="text" class="username" placeholder="Enter your username">
+    <button onclick="showName()">Login</button>
+
+    <h2 id="result"></h2>
+
+    <script>
+        function showName() {
+            const username = document.querySelector(".username");
+            document.querySelector("#result").textContent = "Welcome, " + username.value;
+        }
+    </script>
+    <br>
+    <hr>
+    <br>
+    <!-- Example 3 -->
+     <div class="banner">Summer Sale</div><br>
+     <button onclick="changeBanner()">Update</button>
+
+     <script>
+        function changeBanner() {
+            const banner = document.querySelector(".banner");
+            banner.textContent = "MEGA SALE 70% OFFER"
+        }
+     </script>
+  </body>
+</html>

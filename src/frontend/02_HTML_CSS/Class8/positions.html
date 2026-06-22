@@ -1,0 +1,321 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Positions</title>
+    <style>
+      .box {
+        background-color: lightblue;
+        padding: 20px;
+        top: 10px;
+        left: 50px;
+        bottom: 10px;
+        position: static;
+      }
+      section {
+        background-color: orange;
+        width: 100px;
+        height: 200px;
+        position: relative;
+        left: 100px;
+        top: 50px;
+      }
+
+      .container {
+        position: relative;
+        width: 120px;
+      }
+
+      .badge {
+        background-color: red;
+        padding: 4px 8px;
+        border-radius: 50%;
+        color: white;
+        position: relative;
+        top: -14px;
+        left: -5px;
+      }
+      .child {
+        background-color: green;
+        padding: 20px;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        color: white;
+      }
+      .parent {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        background-color: lightblue;
+        top: 20px;
+      }
+      /* Fixed */
+      div.content {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: olivedrab;
+        padding: 20px;
+        color: white;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+        padding: 20px;
+      }
+
+      /* Sticky */
+      div.content2 {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        background-color: black;
+        padding: 20px;
+        color: white;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent"></div>
+    <!-- Absolute -->
+    <div class="box">I love my country</div>
+    <hr />
+    <section></section>
+    <br /><br /><br />
+    <hr />
+    <br /><br />
+    <div class="container">
+      Inbox
+      <span class="badge">3</span>
+    </div>
+    <br /><br />
+    <div class="child">Box</div>
+    <br /><br />
+    <div class="parent">
+      <div class="child">Child Box</div>
+    </div>
+
+    <br /><br />
+    <hr />
+
+    <!-- Fixed position -->
+    <div class="content">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quaerat
+        aperiam maiores saepe dolorum facilis quia earum, alias ducimus, animi
+        quisquam perspiciatis doloribus eos repellat enim minima vitae
+        temporibus sapiente, quidem cupiditate! Quidem modi repudiandae quam
+        exercitationem. Odio saepe expedita inventore quod quas at voluptatibus
+        nisi ullam sed. Esse, dicta! Obcaecati voluptas veritatis neque
+        reiciendis dignissimos illum animi soluta illo, ratione debitis rem,
+        assumenda ducimus sit asperiores quis harum minima! Facere doloribus
+        possimus soluta corporis harum omnis, eius, odit non nisi voluptatum
+        sapiente. Nihil ab harum magni quam voluptas nostrum molestias facilis
+        aliquid distinctio fugit consectetur tenetur reiciendis, fuga debitis.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quaerat
+        aperiam maiores saepe dolorum facilis quia earum, alias ducimus, animi
+        quisquam perspiciatis doloribus eos repellat enim minima vitae
+        temporibus sapiente, quidem cupiditate! Quidem modi repudiandae quam
+        exercitationem. Odio saepe expedita inventore quod quas at voluptatibus
+        nisi ullam sed. Esse, dicta! Obcaecati voluptas veritatis neque
+        reiciendis dignissimos illum animi soluta illo, ratione debitis rem,
+        assumenda ducimus sit asperiores quis harum minima! Facere doloribus
+        possimus soluta corporis harum omnis, eius, odit non nisi voluptatum
+        sapiente. Nihil ab harum magni quam voluptas nostrum molestias facilis
+        aliquid distinctio fugit consectetur tenetur reiciendis, fuga debitis.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quaerat
+        aperiam maiores saepe dolorum facilis quia earum, alias ducimus, animi
+        quisquam perspiciatis doloribus eos repellat enim minima vitae
+        temporibus sapiente, quidem cupiditate! Quidem modi repudiandae quam
+        exercitationem. Odio saepe expedita inventore quod quas at voluptatibus
+        nisi ullam sed. Esse, dicta! Obcaecati voluptas veritatis neque
+        reiciendis dignissimos illum animi soluta illo, ratione debitis rem,
+        assumenda ducimus sit asperiores quis harum minima! Facere doloribus
+        possimus soluta corporis harum omnis, eius, odit non nisi voluptatum
+        sapiente. Nihil ab harum magni quam voluptas nostrum molestias facilis
+        aliquid distinctio fugit consectetur tenetur reiciendis, fuga debitis.
+      </p>
+      <div class="content2">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quaerat
+        aperiam maiores saepe dolorum facilis quia earum, alias ducimus, animi
+        quisquam perspiciatis doloribus eos repellat enim minima vitae
+        temporibus sapiente, quidem cupiditate! Quidem modi repudiandae quam
+        exercitationem. Odio saepe expedita inventore quod quas at voluptatibus
+        nisi ullam sed. Esse, dicta! Obcaecati voluptas veritatis neque
+        reiciendis dignissimos illum animi soluta illo, ratione debitis rem,
+        assumenda ducimus sit asperiores quis harum minima! Facere doloribus
+        possimus soluta corporis harum omnis, eius, odit non nisi voluptatum
+        sapiente. Nihil ab harum magni quam voluptas nostrum molestias facilis
+        aliquid distinctio fugit consectetur tenetur reiciendis, fuga debitis.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quaerat
+        aperiam maiores saepe dolorum facilis quia earum, alias ducimus, animi
+        quisquam perspiciatis doloribus eos repellat enim minima vitae
+        temporibus sapiente, quidem cupiditate! Quidem modi repudiandae quam
+        exercitationem. Odio saepe expedita inventore quod quas at voluptatibus
+        nisi ullam sed. Esse, dicta! Obcaecati voluptas veritatis neque
+        reiciendis dignissimos illum animi soluta illo, ratione debitis rem,
+        assumenda ducimus sit asperiores quis harum minima! Facere doloribus
+        possimus soluta corporis harum omnis, eius, odit non nisi voluptatum
+        sapiente. Nihil ab harum magni quam voluptas nostrum molestias facilis
+        aliquid distinctio fugit consectetur tenetur reiciendis, fuga debitis.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quaerat
+        aperiam maiores saepe dolorum facilis quia earum, alias ducimus, animi
+        quisquam perspiciatis doloribus eos repellat enim minima vitae
+        temporibus sapiente, quidem cupiditate! Quidem modi repudiandae quam
+        exercitationem. Odio saepe expedita inventore quod quas at voluptatibus
+        nisi ullam sed. Esse, dicta! Obcaecati voluptas veritatis neque
+        reiciendis dignissimos illum animi soluta illo, ratione debitis rem,
+        assumenda ducimus sit asperiores quis harum minima! Facere doloribus
+        possimus soluta corporis harum omnis, eius, odit non nisi voluptatum
+        sapiente. Nihil ab harum magni quam voluptas nostrum molestias facilis
+        aliquid distinctio fugit consectetur tenetur reiciendis, fuga debitis.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quaerat
+        aperiam maiores saepe dolorum facilis quia earum, alias ducimus, animi
+        quisquam perspiciatis doloribus eos repellat enim minima vitae
+        temporibus sapiente, quidem cupiditate! Quidem modi repudiandae quam
+        exercitationem. Odio saepe expedita inventore quod quas at voluptatibus
+        nisi ullam sed. Esse, dicta! Obcaecati voluptas veritatis neque
+        reiciendis dignissimos illum animi soluta illo, ratione debitis rem,
+        assumenda ducimus sit asperiores quis harum minima! Facere doloribus
+        possimus soluta corporis harum omnis, eius, odit non nisi voluptatum
+        sapiente. Nihil ab harum magni quam voluptas nostrum molestias facilis
+        aliquid distinctio fugit consectetur tenetur reiciendis, fuga debitis.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quaerat
+        aperiam maiores saepe dolorum facilis quia earum, alias ducimus, animi
+        quisquam perspiciatis doloribus eos repellat enim minima vitae
+        temporibus sapiente, quidem cupiditate! Quidem modi repudiandae quam
+        exercitationem. Odio saepe expedita inventore quod quas at voluptatibus
+        nisi ullam sed. Esse, dicta! Obcaecati voluptas veritatis neque
+        reiciendis dignissimos illum animi soluta illo, ratione debitis rem,
+        assumenda ducimus sit asperiores quis harum minima! Facere doloribus
+        possimus soluta corporis harum omnis, eius, odit non nisi voluptatum
+        sapiente. Nihil ab harum magni quam voluptas nostrum molestias facilis
+        aliquid distinctio fugit consectetur tenetur reiciendis, fuga debitis.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quaerat
+        aperiam maiores saepe dolorum facilis quia earum, alias ducimus, animi
+        quisquam perspiciatis doloribus eos repellat enim minima vitae
+        temporibus sapiente, quidem cupiditate! Quidem modi repudiandae quam
+        exercitationem. Odio saepe expedita inventore quod quas at voluptatibus
+        nisi ullam sed. Esse, dicta! Obcaecati voluptas veritatis neque
+        reiciendis dignissimos illum animi soluta illo, ratione debitis rem,
+        assumenda ducimus sit asperiores quis harum minima! Facere doloribus
+        possimus soluta corporis harum omnis, eius, odit non nisi voluptatum
+        sapiente. Nihil ab harum magni quam voluptas nostrum molestias facilis
+        aliquid distinctio fugit consectetur tenetur reiciendis, fuga debitis.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quaerat
+        aperiam maiores saepe dolorum facilis quia earum, alias ducimus, animi
+        quisquam perspiciatis doloribus eos repellat enim minima vitae
+        temporibus sapiente, quidem cupiditate! Quidem modi repudiandae quam
+        exercitationem. Odio saepe expedita inventore quod quas at voluptatibus
+        nisi ullam sed. Esse, dicta! Obcaecati voluptas veritatis neque
+        reiciendis dignissimos illum animi soluta illo, ratione debitis rem,
+        assumenda ducimus sit asperiores quis harum minima! Facere doloribus
+        possimus soluta corporis harum omnis, eius, odit non nisi voluptatum
+        sapiente. Nihil ab harum magni quam voluptas nostrum molestias facilis
+        aliquid distinctio fugit consectetur tenetur reiciendis, fuga debitis.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quaerat
+        aperiam maiores saepe dolorum facilis quia earum, alias ducimus, animi
+        quisquam perspiciatis doloribus eos repellat enim minima vitae
+        temporibus sapiente, quidem cupiditate! Quidem modi repudiandae quam
+        exercitationem. Odio saepe expedita inventore quod quas at voluptatibus
+        nisi ullam sed. Esse, dicta! Obcaecati voluptas veritatis neque
+        reiciendis dignissimos illum animi soluta illo, ratione debitis rem,
+        assumenda ducimus sit asperiores quis harum minima! Facere doloribus
+        possimus soluta corporis harum omnis, eius, odit non nisi voluptatum
+        sapiente. Nihil ab harum magni quam voluptas nostrum molestias facilis
+        aliquid distinctio fugit consectetur tenetur reiciendis, fuga debitis.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quaerat
+        aperiam maiores saepe dolorum facilis quia earum, alias ducimus, animi
+        quisquam perspiciatis doloribus eos repellat enim minima vitae
+        temporibus sapiente, quidem cupiditate! Quidem modi repudiandae quam
+        exercitationem. Odio saepe expedita inventore quod quas at voluptatibus
+        nisi ullam sed. Esse, dicta! Obcaecati voluptas veritatis neque
+        reiciendis dignissimos illum animi soluta illo, ratione debitis rem,
+        assumenda ducimus sit asperiores quis harum minima! Facere doloribus
+        possimus soluta corporis harum omnis, eius, odit non nisi voluptatum
+        sapiente. Nihil ab harum magni quam voluptas nostrum molestias facilis
+        aliquid distinctio fugit consectetur tenetur reiciendis, fuga debitis.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quaerat
+        aperiam maiores saepe dolorum facilis quia earum, alias ducimus, animi
+        quisquam perspiciatis doloribus eos repellat enim minima vitae
+        temporibus sapiente, quidem cupiditate! Quidem modi repudiandae quam
+        exercitationem. Odio saepe expedita inventore quod quas at voluptatibus
+        nisi ullam sed. Esse, dicta! Obcaecati voluptas veritatis neque
+        reiciendis dignissimos illum animi soluta illo, ratione debitis rem,
+        assumenda ducimus sit asperiores quis harum minima! Facere doloribus
+        possimus soluta corporis harum omnis, eius, odit non nisi voluptatum
+        sapiente. Nihil ab harum magni quam voluptas nostrum molestias facilis
+        aliquid distinctio fugit consectetur tenetur reiciendis, fuga debitis.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quaerat
+        aperiam maiores saepe dolorum facilis quia earum, alias ducimus, animi
+        quisquam perspiciatis doloribus eos repellat enim minima vitae
+        temporibus sapiente, quidem cupiditate! Quidem modi repudiandae quam
+        exercitationem. Odio saepe expedita inventore quod quas at voluptatibus
+        nisi ullam sed. Esse, dicta! Obcaecati voluptas veritatis neque
+        reiciendis dignissimos illum animi soluta illo, ratione debitis rem,
+        assumenda ducimus sit asperiores quis harum minima! Facere doloribus
+        possimus soluta corporis harum omnis, eius, odit non nisi voluptatum
+        sapiente. Nihil ab harum magni quam voluptas nostrum molestias facilis
+        aliquid distinctio fugit consectetur tenetur reiciendis, fuga debitis.
+      </p>
+    </div>
+  </body>
+</html>
+
+<!-- 
+    positions
+    - used to control the position of the element on the page
+
+    static -> default position of the html element
+    relative -> the element stays in the normal flow but it can move.
+    absolute -> the element is removed from the normal flow
+        1) If it contains any positioned parent, then it will position with respect to the parent, else will position to the html page
+
+    fixed -> 
+    sticky
+
+    top, right, left and bottom
+
+-->

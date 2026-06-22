@@ -1,0 +1,14 @@
+index.html
+main.js
+style.css
+
+
+===========================
+We don't see any html file
+
+We use JSX => Javascript XML (HTML + JS) JSX
+
+When we start the React app, first file which will be loading is index.html
+From the root (id), it will find the main.jsx and it will display App
+
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        a:hover {
+            background-color: orange;
+        }
+        a:link {
+            color: pink;
+        }
+
+        a:visited {
+            color: green;
+        }
+
+        a:active {
+            color: red;
+        }
+
+        input:focus {
+            background-color: orange;
+            border: 2px solid red;
+            outline: none;
+        }
+
+        li:first-child {
+            color: orange;
+        }
+
+        li:last-child {
+            color: green;
+        }
+
+        li:nth-child(even) {
+            background-color: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="https://www.google.com">Google</a>
+
+    <input type="text" placeholder="Enter your name">
+
+    <ul>
+        <li>OPPO</li>
+        <li>VIVO</li>
+        <li>iPhone</li>
+        <li>Samsung</li>
+    </ul>
+</body>
+</html>
+
+<!-- 
+    pseudo classes and pseudo elements
+
+    pseudo class (:) -> defines the special state of the element
+
+    pseudo element (::) -> styles a specific part of the element
+
+    :hover -> When mouse hover over the element
+    :active -> When the element is clicked
+    :visited -> When the link is visited
+    :link -> Unvisited link
+    
+-->

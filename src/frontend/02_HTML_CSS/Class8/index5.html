@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Document</title>
+    <style>
+      h1::before {
+        content: "FIRST";
+      }
+
+      h1::after {
+        content: "bye";
+      }
+
+      h1::first-letter {
+        font-size: 100px;
+      }
+
+      h1::first-line {
+        color: green;
+      }
+
+      ::placeholder {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      This is some heading. This is some heading. This is some heading. This is
+      some heading. This is some heading. This is some heading. This is some
+      heading. This is some heading.
+    </h1>
+    <input type="text" placeholder="Enter your name" />
+  </body>
+</html>
+
+<!-- pseudo element -->

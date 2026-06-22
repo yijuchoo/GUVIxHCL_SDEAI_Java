@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- inline event handling HTML -->
+    <button onclick="showMessage()">Click</button>
+
+    <script>
+      function showMessage() {
+        alert("Hello, how are you going by flight? How's the day?");
+      }
+    </script>
+
+    <!-- use the DOM event properties -->
+    <button id="btn">Click Me</button>
+
+    <script>
+      const button = document.getElementById("btn");
+      button.onclick = function () {
+        alert("DOM way of using events");
+      };
+    </script>
+
+    <!-- Using addEventListener() -->
+    <button id="btn1">Click Me</button>
+
+    <script>
+      const button1 = document.getElementById("btn1");
+      button1.addEventListener("Click", function () {
+        alert("Payment is processing");
+      });
+
+      button1.addEventListener("Click", function () {
+        alert("Payment still processing, please wait");
+      });
+
+      button1.addEventListener("click", function () {
+        alert("Payment is processed");
+      });
+
+      button1.addEventListener("click", function () {
+        alert("Payment is DONE");
+      });
+    </script>
+
+    <img src="image2.jpg" alt="" id="photo" width="400px" />
+    <script>
+      const photo = document.getElementById("photo");
+      photo.addEventListener("dblclick", function () {
+        alert("Post is Liked");
+      });
+    </script>
+
+    <div id="box">Something</div>
+    <script>
+      const box = document.getElementById("box");
+      box.addEventListener("mousedown", function () {
+        alert("Helllllllllllooooooooooooooooooooooooooooooooooooooooo");
+      });
+    </script>
+
+    <select name="" id="menu">
+      <option value="">Idly Sambar</option>
+      <option value="">Dosa</option>
+      <option value="">Puri</option>
+    </select>
+
+    <script>
+      const menu = document.getElementById("menu");
+      menu.addEventListener("change", function () {
+        console.log("Menu changed");
+      });
+    </script>
+  </body>
+</html>

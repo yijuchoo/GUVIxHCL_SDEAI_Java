@@ -26,6 +26,7 @@ public class EnrollmentController {
         return ResponseEntity.status(HttpStatus.CREATED).body(created);
     }
 
+    // two roles: student OR admin
     @GetMapping
     public List<Enrollment> getAll() {
         return enrollmentService.getAll();

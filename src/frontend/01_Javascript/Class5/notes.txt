@@ -1,0 +1,57 @@
+Agenda:
+JSON Iteration 
+Objects
+and github
+
+Sql 
+create table 
+insert 
+select 
+rows and columns -> tables 
+subqueries, joins
+
+NoSQL 
+collections 
+document 
+mongoose 
+json/bson 
+{ 
+    name : "venkat" 
+}
+
+JSON => Javascript object notation
+JSON supports the following data types
+
+String => "venkat"
+number => 100
+boolean => true
+array => [1, 2, 3]
+object => {"name": "ram"}
+null => null
+
+{
+    "username": "Joseph Vijay",
+    "age": 45,
+    "rating": 4.5,
+    "isCM": true,
+    "skills": ["actor", "artist", "director", "politics"],
+    "address": {
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "Pincode": 647474
+    },
+    "middlename": null
+}
+
+JSON:
+- keys must have double quotes ""
+- contains only data
+- used for data transfer
+- string format
+
+
+Javascript Object:
+- quotes are optional
+- can contain functions
+- used inside the Javascript
+- object format

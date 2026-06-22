@@ -1,0 +1,13 @@
+hooks: Hook is the special kind of function we can use in react
+
+1) useState -> if we wanted to maintain the state of the application then we can use the useState
+
+const [state, setState] = useState(initialValue);
+
+state -> current state value
+setState -> setter method used to update the state value
+initialValue -> starting value
+
+props are immutable, we can't change the value
+
+state are mutable, we are able to maintain the state of the application using use state

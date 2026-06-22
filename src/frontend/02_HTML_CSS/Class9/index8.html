@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            /* height: 100vh -> it will take the entire screen height, entire page view (viewport height) */
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: skyblue;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        /* main content */
+        main {
+            background-color: bisque;
+            flex: 1;
+            /* it will take the remaining space */
+            /* flex grow, flex-shrink, flex-basis */
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* align-items: center -> align items center vertically */
+            font-size: 50px;
+        }
+
+        footer {
+            background-color: black;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GUVI Shopping Site</h1>
+    </header>
+    <nav>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">Contact</a>
+    </nav>
+
+    <main>
+        Welcome to GUVI : the All-in-One Shop
+    </main>
+
+    <footer>
+        &copy; All rights reserved GUVI HCL
+    </footer>
+</body>
+</html>

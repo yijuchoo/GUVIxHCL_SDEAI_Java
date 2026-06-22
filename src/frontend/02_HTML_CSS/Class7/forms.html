@@ -1,0 +1,74 @@
+<!-- Forms -> used to collect user information from the input fields -->
+<!doctype html>
+<html>
+  <head>
+    <title>Forms</title>
+  </head>
+  <body>
+    <form>
+      <!-- 
+        name = "" -> its used for passing the valeu to backend where the url will be like this:
+        http://127.0.0.1:5500/forms.html?name=Guest&email=yirou.choo%40gmail.com&password=sdfd&date=&file=
+        http://127.0.0.1:5500/forms.html?name=Guest&email=yirou.choo%40gmail.com&password=werr&gender=on&socialservice=on&cricket=on&date=2026-05-19&file=Steps_E-commerce+Backend+System.txt&comments=dasf
+
+        name=Guest
+        email=xxx%40gmail.com
+        password=sdfd
+
+        id = "" 0> used for:
+        1. Targeting for CSS Styling
+        Example: #header { background-color: blue; } targets the element with id="header"
+
+        2. Manipulation with JavaScript
+        JavaScript uses IDs to find and change specific elements dynamically. 
+        The most common method is Document.getElementById()
+        Example: document.getElementById("myButton").innerText = "Clicked!";
+        -->
+      <label for="name">Enter your Name:</label>
+      <input
+        type="text"
+        placeholder="Enter your Name"
+        id="name"
+        name="name"
+        value="Guest"
+      /><br /><br />
+
+      <label for="email">Enter your Email:</label>
+      <input
+        type="email"
+        placeholder="Enter your email"
+        id="email"
+        name="email"
+      /><br /><br />
+
+      <label for="password">Enter your Password:</label>
+      <input
+        type="password"
+        placeholder="Enter your password"
+        id="password"
+        name="password"
+      /><br /><br />
+
+      <label>Select your Gender:</label>
+      <input type="radio" id="male" name="gender" />Male
+      <input type="radio" id="female" name="gender" />Female
+      <input type="radio" id="transgender" name="gender" />Transgender
+      <br /><br />
+
+      <label>Hobbies:</label>
+      <input type="checkbox" id="socialservice" name="socialservice" />Social
+      Service <input type="checkbox" id="cricket" name="cricket" />Cricket
+      <input type="checkbox" id="songs" name="songs" />Songs <br /><br />
+
+      <label>Choose your date of birth:</label>
+      <input type="date" id="date" name="date" /><br /><br />
+
+      <label>Choose your profile image:</label>
+      <input type="file" id="file" name="file" /><br /><br />
+
+      <textarea rows="10" cols="50" placeholder="Enter your comments" name="comments"></textarea
+      ><br /><br />
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

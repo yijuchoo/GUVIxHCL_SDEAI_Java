@@ -1,0 +1,11 @@
+HTML -> HYPER TEXT MARKUP LANGUAGE
+
+document driven -> if we want to show the text/ some content to the user, we are using HTML
+
+index.html =>
+
+html4 and html5
+
+html4 -> is case-sensitive and we have to follow some rules
+html5 -> <!DOCTYPE html> we are using html5, it will work in all the browsers
+

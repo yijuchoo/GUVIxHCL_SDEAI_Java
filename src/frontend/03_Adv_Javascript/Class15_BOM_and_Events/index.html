@@ -1,0 +1,68 @@
+<!-- 
+BOM -> Browser  object model -> allows javascript to interact with the browser window
+
+Get the browser info
+Navigate to different pages
+Show alerts, confirm, prompts
+
+-->
+<button onclick="showAlert()">Submit</button>
+<script>
+  function showAlert() {
+    alert("Your form is successfully submitted");
+  }
+</script>
+
+<script>
+  let result = confirm("Are you sure to delete the account?");
+
+  if (result) {
+    alert("Deleted Successfully");
+  } else {
+    alert("Not deleted");
+  }
+</script>
+
+<script>
+  let logout = confirm("Do you want to logout?");
+  if (logout) {
+    alert("Logged out successfully");
+  }
+</script>
+
+<script>
+  let otp = prompt("Enter OTP");
+  if (otp === "1234") {
+    alert("OTP is validating, logging in...");
+  } else {
+    alert("Invalid OTP");
+  }
+</script>
+
+<button onclick="login()">Login</button>
+<button onclick="goBack()">Go Back</button>
+<button onclick="checkInternet()">Check Internet</button>
+
+<script>
+  function login() {
+    let username = prompt("Enter your username");
+    alert("Welcome, " + username);
+  }
+
+  function login() {
+    alert("Login successful");
+    location.href = "https://www.guvi.in";
+  }
+
+  function goBack() {
+    history.back();
+  }
+
+  function checkInternet() {
+    if (navigator.onLine) {
+      alert("Internet is connected");
+    } else {
+      alert("No Internet");
+    }
+  }
+</script>

@@ -1,0 +1,39 @@
+<!-- 
+    flex box in CSS
+    -> Flexible box layout is used to arrange items in a row or column, 1 dimentional
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .navbar {
+        background-color: black;
+        padding: 20px;
+        display: flex;
+        /* arrange nav-item into 1 row instead of all in 1 column */
+        flex-direction: row;
+        flex-direction: row-reverse;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        flex-direction: row;
+      }
+      .nav-item {
+        color: white;
+        margin-right: 20px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="nav-item">Home</div>
+      <div class="nav-item">About</div>
+      <div class="nav-item">Services</div>
+      <div class="nav-item">Contact</div>
+    </div>
+  </body>
+</html>

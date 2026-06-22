@@ -1,0 +1,51 @@
+Typescript is the superset of javascript that addes the static typing 
+1) every js code is a valid ts code 
+2) ts will not understand by the browser...
+TS code is converted or compiled into javascript before running in the browser or node js 
+TS is the programming language developed by MS 
+
+JS
+===================  
+let age = 100; age = "hello"; //allowed 
+
+Error detection will happen at runtime 
+Type checking wil not happen 
+
+TS
+=================== 
+let age:number = 25; 
+age = "hello";  //error 
+
+Error detection at compile time 
+Type checking will happen 
+
+
+1)
+installation 
+=================== 
+npm init -y
+npm install typescript
+
+check verison... 
+============================ 
+npx tsc -v
+
+create the typescript config 
+============================ 
+npx tsc --init 
+
+
+2)
+to run the ts 
+==============================
+npm install -D ts-node typescript 
+
+then to run the ts... 
+==============================
+npx ts-node app.ts 
+
+3) 
+to run the ts 
+==============================
+npm install -D tsx
+npx tsx main.ts

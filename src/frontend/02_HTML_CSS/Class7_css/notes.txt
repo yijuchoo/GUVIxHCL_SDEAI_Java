@@ -1,0 +1,20 @@
+CSS -> stands for Cascading style sheet
+- used to style, design the HTML web pages
+colors
+fonts
+spacing 
+animations
+borders 
+etc 
+
+color: green;
+
+property: value:
+
+property defines what style we want to change 
+value defines the style value
+
+Different types of styles:
+1) inline -> 
+2) internal
+3) external

@@ -1,0 +1,36 @@
+<script>
+    let authSystem = (function(){
+    let users = [
+        {
+            username: "admin",
+            password: "1234"
+        },
+        {
+            username: "manager",
+            password: "5678"
+        }
+    ]
+
+    // return the public methods
+    return {
+        // login method
+        login: function(username, password){
+            // Find the matching user 
+            let validUser = users.find(function(user){
+                return (
+                    user.username === username &&
+                    user.password === password
+                )
+            });
+
+            if(validUser){
+                console.log("Login successful");
+            } else {
+                console.log("Invalid credentials");
+            }
+        }
+    }
+})();
+
+authSystem.login("user", "1234");
+</script>

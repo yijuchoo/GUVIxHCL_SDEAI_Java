@@ -1,0 +1,6 @@
+function in javascript is a reusable block of code that performs a specific task
+functions help us reuse the code, reduce the repetition and organize the logic and makes the program easier to maintain.
+
+function functionName(){
+    
+}

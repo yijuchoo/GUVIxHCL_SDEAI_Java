@@ -1,0 +1,33 @@
+DOM -> Document Object Model
+- form tree structure (a breakdown of html structure from top to bottom 
+html -> head, body -> main) used to manipulate the HTML elements
+
+select the elements
+change the content
+change the styles
+
+
+<!-- querySelector and querySelectorAll -->
+
+    <!-- id, className, tagName -->
+
+
+    document.querySelector("id") 
+    document.querySelector("class")
+    document.querySelector("tag") 
+
+
+    querySelector()
+    -------------------
+    returns only first matching element,
+    single element
+    used when one element needed
+    
+
+    querySelectorAll()
+    ---------------------
+    returns all the matching elements
+    nodelist
+    used when multiple elements needed
+
+

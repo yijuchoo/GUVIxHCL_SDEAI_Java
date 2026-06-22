@@ -1,0 +1,12 @@
+Agenda:
+Introduction to JavaScript
+Operators
+Variables and Data Types
+
+
+What is Javascript?
+javascript is the igh level interpreted object oriented programming language used to create interactive web pages
+
+1) html -> structure
+2) css -> design
+3) javascrirpt -> logic and functionality
