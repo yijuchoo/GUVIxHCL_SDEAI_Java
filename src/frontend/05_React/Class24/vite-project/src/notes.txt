@@ -1,0 +1,14 @@
+useEffect hook is used to perform side effects in react components.
+
+A side effect is anything that happens outside the rendering of the UI
+Eg.
+- calling an api
+- settling the timers
+- authentication checking
+
+useEffect(() => {
+    ...
+})
+
+
+npm install axios

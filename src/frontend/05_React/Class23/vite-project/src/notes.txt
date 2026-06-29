@@ -1,0 +1,19 @@
+useState is used to maintain the state of the application.
+usestate is used to store and manage the values entered by the user in the form fields.
+
+const[state, setState] = useState(initialState);
+
+state -> current state
+setState -> is the setter method used to update the state
+
+
+ Controlled forms vs Uncontrolled forms
+ ----------------------------------------------------------------
+ controlled forms will be controlled by the react useState
+  - for each and every change the event will be triggered
+
+ uncontrolled forms will be done on the DOM
+  - it will not triggered for each input change
+  - uncontrolled form increases the performances of the app
+  - Always when use simple forms -> useRef hook
+
