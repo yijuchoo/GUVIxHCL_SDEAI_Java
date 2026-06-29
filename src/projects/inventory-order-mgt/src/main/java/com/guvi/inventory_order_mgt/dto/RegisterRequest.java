@@ -1,6 +1,5 @@
 package com.guvi.inventory_order_mgt.dto;
 
-import com.guvi.inventory_order_mgt.enums.Role;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 

@@ -15,6 +15,7 @@ import java.time.Instant;
 @Component
 public class BookingEventProducer {
     private final KafkaTemplate<String, BookingEvent> kafkaTemplate;
+    private final String EVENT_REGISTRATION_TOPIC = "event.registration.bookings";
 
     // Constructor
     public BookingEventProducer(KafkaTemplate<String, BookingEvent> kafkaTemplate) {
@@ -36,6 +37,6 @@ public class BookingEventProducer {
                  booking.getNumberOfSeats(),
                  Instant.now()
          );
-
+         kafkaTemplate.send(EVENT_REGISTRATION_TOPIC, booking.getEventId(), payload);
     }
 }

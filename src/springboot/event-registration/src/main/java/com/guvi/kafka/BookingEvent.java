@@ -8,18 +8,17 @@ public class BookingEvent {
     private String bookingId;
     private String userId;
     private int numberOfSeats;
-    private double price;
+    // private double price;
     private Instant occurredAt;
 
     public BookingEvent(String eventName, String eventId, String bookingId, String userId, int numberOfSeats,
-                        double price,
                         Instant occurredAt) {
         this.eventName = eventName;
         this.eventId = eventId;
         this.bookingId = bookingId;
         this.userId = userId;
         this.numberOfSeats = numberOfSeats;
-        this.price = price;
+        // this.price = price;
         this.occurredAt = occurredAt;
     }
 
@@ -63,13 +62,13 @@ public class BookingEvent {
         this.numberOfSeats = numberOfSeats;
     }
 
-    public double getPrice() {
-        return price;
-    }
+    // public double getPrice() {
+    //     return price;
+    // }
 
-    public void setPrice(double price) {
-        this.price = price;
-    }
+    // public void setPrice(double price) {
+    //     this.price = price;
+    // }
 
     public Instant getOccurredAt() {
         return occurredAt;
@@ -87,7 +86,7 @@ public class BookingEvent {
                 ", bookingId='" + bookingId + '\'' +
                 ", userId='" + userId + '\'' +
                 ", numberOfSeats=" + numberOfSeats +
-                ", price=" + price +
+                // ", price=" + price +
                 ", occurredAt=" + occurredAt +
                 '}';
     }

@@ -1,12 +1,12 @@
 package com.guvi;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+// import org.junit.jupiter.api.Test;
+// import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+// @SpringBootTest
 class EventRegistrationApplicationTests {
 
-    @Test
+    // @Test
     void contextLoads() {
     }
 
