@@ -1,0 +1,17 @@
+
+useState - if we want to maintain the state of the application we can use useState
+
+useReducer - if we wanted to maintain the complex state of the application then we have to use useReducer
+
+const [state, dispatch] = useReducer(reducer, initialState);
+
+state => Current state
+dispatch() => sends an action when the user clicks on a button
+
+reducer() => detects how the state changes
+reducer will take two arguments (state, action) -> based on the action, state will change
+
+initialState -> initial values
+
+Why we need to use useReducer?
+    - 

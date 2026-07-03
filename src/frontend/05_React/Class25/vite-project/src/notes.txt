@@ -1,0 +1,46 @@
+Setup
+------------------------
+npm create vite
+vite-project
+React
+Javascript
+No
+
+cd vite-project
+npm install
+npm run dev
+
+Depends on requirements, not necessary to use both memo and useCallback
+
+  const handleAge = useCallback(() => {
+    setAge(age + 1);
+  },[age]);
+
+  export default memo(Age);
+
+memo -> When we wrap the memo, components with props change will be loaded.
+
+useMemo ->
+// useMemo is used to cache or memoize the result of the (expensive) calculations
+// useMemo is going to prevent react from recalculating expensive operations on every render
+    - Avoid recalculating complex logic.
+
+useCallback -> used to cache a function definition itself.
+    - Prevent unnecessary re-renders of child components.
+
+
+--------------------------------------------------
+useRef and useState
+React only re-renders when things like these change:
+
+useState
+useReducer
+Parent component re-renders
+Props change
+
+Changing a ref does not cause any of these.
+
+useRef does not trigger a re-render.
+
+Use useState for displaying data.
+If the value needs to appear in the UI, use state instead.
