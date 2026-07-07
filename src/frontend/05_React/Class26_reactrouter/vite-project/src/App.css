@@ -1,0 +1,28 @@
+
+
+.container {
+  width: 95%;
+  margin: auto;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.navbar a:hover {
+  color: white;
+  background: steelblue;
+  border-radius: 5px;
+}

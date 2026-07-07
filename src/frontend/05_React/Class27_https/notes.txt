@@ -1,0 +1,9 @@
+
+
+http methods are used to communicate with the backend servers (REST API)
+
+Get => Read the data => display all the products
+POST => use to create the data or create the new resource/record => add new product/ Add new user / Register
+PUT => Update the entire record => Update entire product details
+PATCH => Used to update the specific data => Update only price => Update only the address
+DELETE => Remove data => delete the product

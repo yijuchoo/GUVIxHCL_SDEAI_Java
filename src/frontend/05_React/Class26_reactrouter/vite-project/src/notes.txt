@@ -1,0 +1,9 @@
+Setup React Router DOM
+-----------------------------------------
+npm install react-router-dom
+
+
+Router -> for adding all the routes
+
+import {Route, Link, Routes, BrowserRouter as Router} from "react-router-dom"
+

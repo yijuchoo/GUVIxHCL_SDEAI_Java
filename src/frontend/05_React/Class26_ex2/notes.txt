@@ -1,0 +1,15 @@
+BrowserRouter -> it enables routing in the browserRoute
+
+Routes -> container to all the individual Routes
+
+Route -> individual Routes
+
+Link -> navigatesbetween the pages without refreshing the browserRoute
+Outlet -> Used to render the nested (child) routes inside the parent component
+
+useNavigate -> is used 
+
+
+BrowserRouter... it enable routing in the browserROute 
+Routes -> containter to all the individual routes Route -> individual routes Link -> navigates b/w hte pages without refreshing the browserROute Outlet -> used to render the nested(child) routes inside the parent component useNavigate -> is used for programmatic navigation useParams -> reads the dynamic values from the URL 
+dynamic Routing -> routing uses the URL parameters (/users/:id)

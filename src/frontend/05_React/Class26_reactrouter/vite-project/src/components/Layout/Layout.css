@@ -1,0 +1,24 @@
+
+.layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: cornflowerblue;
+    padding: 30px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: cadetblue;
+    padding: 20px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+}
