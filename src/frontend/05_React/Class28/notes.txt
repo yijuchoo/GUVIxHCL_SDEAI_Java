@@ -1,0 +1,20 @@
+State Management in react
+
+- is the javascript object/ value that stores the data which can change over the time and it will affect in the 
+- Whenever the state changes, react automatically updates (re-renders) the UI
+
+props are immutable, we can't cchange the props
+state is mutable, we are able to change the value based on the user interaction
+
+State Management: Process of storing, updating, sharing and controlling the application data efficiently.
+
+1) local state -> stored inside one component
+2) global satte -> I want same cart to be shared to many components
+
+    a) Prop-drilling -> is the process of passing data(props) from the parent component to the deeply nested child components 
+        through one or more 
+
+
+context API -> useContext is a hook used to consume the data provided by the context API
+context API is a global state
+
